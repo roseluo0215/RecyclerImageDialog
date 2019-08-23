@@ -50,8 +50,9 @@ public class ShowRecyclerImageDialog extends AlertDialog {
 
   public void setImageUrl(String url) {
     if (mUrlList == null) {
-      mUrlList = new ArrayList<>(1);
+      mUrlList = new ArrayList<>(4);
     }
+    mUrlList.clear();
     mUrlList.add(url);
   }
 
